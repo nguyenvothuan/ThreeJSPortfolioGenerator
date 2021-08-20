@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toan's Website</title>
+</head>
+
+<body>
+    <canvas id="bg"></canvas>
+
+    <main>
+        <!-- portfolio creating form -->
+
+        <div class="container" id="cv-form">
+            <h1 class="text-center my-2">Resume Creator</h1>
+            <p class="text-center">By Toan Tran</p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- first col -->
+
+                    <h3>Personal Information</h3>
+
+                    <div class="form-group">
+                        <label for="nameField">Your Name</label>
+                        <input type="text" id="nameField" placeholder="Enter here" class="form-control" />
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <label for="quoteField">Quote</label>
+                        <input type="text" id="quoteField" placeholder="Enter here" class="form-control" />
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <label for="addressField">Your Address</label>
+                        <textarea id="addressField" placeholder="Enter here" class="form-control" rows="5️"></textarea>
+                    </div>
+
+                    <p class="text-secondary my-3">Important Links</p>
+
+                    <div class="form-group mt-2">
+                        <label for="facebookField">Facebook Link</label>
+                        <input type="text" id="facebookField" placeholder="Enter here" class="form-control" />
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <label for="instagramField">Instagram</label>
+                        <input type="text" id="instagramField" placeholder="Enter here" class="form-control" />
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <label for="linkedinField">LinkedIn</label>
+                        <input type="text" id="linkedinField" placeholder="Enter here" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- second col -->
+
+                    <h3>Professional Information</h3>
+                    <div class="form-group mt-2">
+                        <label for="">Objectives</label>
+                        <textarea id="objectivesField" placeholder="Enter here" class="form-control weField" rows="5"></textarea>
+                    </div>
+
+                    <div class="form-group mt-2" id="we">
+                        <label for="">Work Experience</label>
+                        <textarea placeholder="Enter here" class="form-control weField" rows="3"></textarea>
+
+                        <!-- new textarea -->
+
+                        <div class="container text-center mt-2" id="weAddButton">
+                            <button onclick="addNewWEField()" class="btn btn-primary btn-sm">
+                  Add
+                </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-2" id="aq">
+                        <label for="">Academic Qualifications</label>
+                        <textarea placeholder="Enter here" class="form-control aqField" rows="3"></textarea>
+
+                        <div class="container text-center mt-2" id="aqAddButton">
+                            <button onclick="addNewAQField()" class="btn btn-primary btn-sm">
+                  Add
+                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-center mt-3">
+                <button onclick="developCV()" class="btn btn-primary btn-lg">
+            Develop CV
+          </button>
+            </div>
+        </div>
+
+        <!-- portfolio template -->
+
+        <header class="container">
+            <h1 id="nameT1">Toan Quoc Tran</h1>
+            <p>🚀 Welcome to my portfolio</p>
+        </header>
+
+        <blockquote>
+            <p id="quoteT">Coding, Fashion, and Lifestyle</p>
+        </blockquote>
+
+        <section>
+            <h2>📜 Manifesto</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
+
+        <section class="light">
+            <h2>👩🏽‍🚀 Projects</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <h2>🏆 Accomplishments</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
+
+        <blockquote>
+            <p>The best way out is always through <br />-Robert Frost</p>
+        </blockquote>
+
+        <section class="left">
+            <h2>🌮 Work History</h2>
+
+            <h3>McDonalds</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <h3>Burger King</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <h3>Taco Bell</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
+
+        <blockquote>
+            <p>Thanks for watching!</p>
+        </blockquote>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
