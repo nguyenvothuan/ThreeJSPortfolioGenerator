@@ -13,6 +13,16 @@ canvas {
     font-style: normal;
 }
 
+.threejs {
+    display: none;
+
+}
+
+label {
+    color:rgba(15, 15, 15, 0.95)
+}
+
+
 main {
     width: 100vw;
     color: white;
